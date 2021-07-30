@@ -15,7 +15,6 @@ exports.up = function (knex) {
       .notNullable()
       .onDelete("CASCADE")
       .onUpdate("CASCADE");
-    tbl.decimal("quantity").unsigned().notNullable();
   });
 };
 
